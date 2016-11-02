@@ -223,4 +223,4 @@ PI = Val(__pi__)
 
 # Functions
 log = lambda a, b: a.__log__(b)
-d = lambda f, x: f.derivative('x')
+d = lambda f, x: f.derivative(str(x))
