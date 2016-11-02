@@ -16,11 +16,11 @@ To create a polynomial with one variable:
 
 ```
 >>> x = Var('x')
->>> f = x ** TWO + log(E, x) + ONE
+>>> f = x ** TWO + log(E, x) + Val(3)
 >>> f
-((x ^ 2 + ln(x)) + 1)
+((x ^ 2 + ln(x)) + 3)
 >>> f(x=1)
-2.0
+4.0
 >>> f_x = d(f, x)
 >>> f_x
 ([2 * x] + [1 / x])
@@ -28,7 +28,7 @@ To create a polynomial with one variable:
 3.0
 ```
 
-Built-in values
+Built-in `Val` objects
 
 ```
 ZERO
