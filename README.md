@@ -28,3 +28,22 @@ To create a polynomial with one variable:
 3.0
 ```
 
+Built-in values
+
+```
+ZERO
+ONE
+TWO
+E
+PI
+```
+
+Built-in methods
+
+```
+def log(Expr a, Expr b) => Expr
+def d(Expr f, str|Var x) => Expr
+```
+
+- log is different from math.log as the base is the first argument
+- d simply takes the derivative of f with respect to x
